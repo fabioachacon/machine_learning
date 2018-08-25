@@ -32,14 +32,16 @@ public class Grades {
                 grade2 = input.nextDouble();
              
                 average = (grade1 + grade2)/2;
-                System.out.printf("Media do aluno: %s\n", average);
+                System.out.printf("Media do aluno: %.2f\n", average);
                 
                 vector[i] = average;
                 
             }
+              
+            
+          input.close();         
                  
-          
-      }
+     }
       
       
      public void Table()
@@ -88,7 +90,7 @@ public class Grades {
             classAverage += i; 
          }
          
-        System.out.printf("Media da Classe: %s\n", classAverage/6);
+        System.out.printf("Media da Classe: %.2f\n", classAverage/6);
      }
   
 
