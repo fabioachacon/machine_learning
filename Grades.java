@@ -54,7 +54,7 @@ public class Grades {
      
      public void checkGrades()
      {
-         int vec[] = new int[2];
+       
          int reprovado = 0, exame = 0, aprovado = 0;
          
          for(double component : vector)
