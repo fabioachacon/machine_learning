@@ -3,13 +3,13 @@ import java.util.ArrayList;
 
 public class HospitalReport {
     
-      private  double weight;
+      private  double weight, height;
       private  int age, total;
       private  String gender, name;
-      private  double height;
       private int wcounter, mcounter, agecounter, pcounter;
       private ArrayList<Double> listHeigt = new ArrayList();
-      private ArrayList<String> list_Wname = new ArrayList(), listName = new ArrayList();
+      private ArrayList<String> list_Wname = new ArrayList();
+      private ArrayList<String> listName = new ArrayList();
       private ArrayList<Integer> listAge = new ArrayList();
       
     
