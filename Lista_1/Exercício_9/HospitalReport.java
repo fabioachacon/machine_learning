@@ -19,7 +19,7 @@ public class HospitalReport {
      
         System.out.printf("Quantidade de pacientes: %s\n"
                 + "Média de idade dos Homens: %s\n"
-                + "Quant. de mulheres com altura entre 1,60cm e 1,70cm "
+                + "Quant. de mulheres com altura entre 1,60m e 1,70m "
                 + "e peso acima de 70kg: %s\n"
                 + "Quant de pessoas com idade entre 18 e 25 anos: %s\n"
                 + "Nome do paciente mais velho: %s\n"
