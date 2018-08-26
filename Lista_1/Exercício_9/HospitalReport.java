@@ -62,7 +62,7 @@ public class HospitalReport {
             }
              else
             {   
-                total =+ age; 
+                total += age; 
                 ++mcounter;
             }
             ++pcounter;
