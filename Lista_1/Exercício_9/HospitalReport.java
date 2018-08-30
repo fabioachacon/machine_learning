@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.List;
 
 public class HospitalReport {
     
@@ -7,10 +8,10 @@ public class HospitalReport {
       private  int age, total;
       private  String gender, name;
       private int wcounter, mcounter, agecounter, pcounter;
-      private ArrayList<Double> listHeigt = new ArrayList();
-      private ArrayList<String> list_Wname = new ArrayList();
-      private ArrayList<String> listName = new ArrayList();
-      private ArrayList<Integer> listAge = new ArrayList();
+      private List<Double> listHeigt = new ArrayList<Double>();
+      private List<String> list_Wname = new ArrayList<String>();
+      private List<String> listName = new ArrayList<String>();
+      private List<Integer> listAge = new ArrayList<Integer>();
       
     
     
