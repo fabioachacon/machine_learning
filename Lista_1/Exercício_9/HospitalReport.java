@@ -25,7 +25,7 @@ public class HospitalReport {
                 + "Quant de pessoas com idade entre 18 e 25 anos: %s\n"
                 + "Nome do paciente mais velho: %s\n"
                 + "Nome da mulher mais baixa: %s\n"
-                ,pcounter, manAge(), wcounter, agecounter, olderPac(), sWoman());
+                ,pcounter, getManAge(), wcounter, agecounter, olderPac(), sWoman());
         
         
     }
@@ -114,7 +114,7 @@ public class HospitalReport {
    }
     
    
-    public double manAge()
+    public double getManAge()
    {
       return total/mcounter;
    } 
