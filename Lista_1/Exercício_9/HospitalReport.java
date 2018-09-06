@@ -8,7 +8,7 @@ public class HospitalReport {
       private  int age, total;
       private  String gender, name;
       private int wcounter, mcounter, agecounter, pcounter;
-      private List<Double> listHeigt = new ArrayList<Double>();
+      private List<Double> listHeight = new ArrayList<Double>();
       private List<String> list_Wname = new ArrayList<String>();
       private List<String> listName = new ArrayList<String>();
       private List<Integer> listAge = new ArrayList<Integer>();
@@ -58,7 +58,7 @@ public class HospitalReport {
             if("f".equals(gender))
             {
                 list_Wname.add(name);
-                listHeigt.add(height);
+                listHeight.add(height);
                 womanCounter();
             }
              else
@@ -87,15 +87,15 @@ public class HospitalReport {
     
     public String sWoman()
     {
-       double min = listHeigt.get(0);
+       double min = listHeight.get(0);
        
        for(int j = 1; j < listHeigt.size(); j++)
        {
-         min = Math.min(min, listHeigt.get(j));
+         min = Math.min(min, listHeight.get(j));
        }
        
     
-     return list_Wname.get(listHeigt.indexOf(min));
+     return list_Wname.get(listHeight.indexOf(min));
      
    }
     
