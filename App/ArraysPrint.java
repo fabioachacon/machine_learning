@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class ArraysPrint {
     
-    private int[] array = new int[299];
+    private int[] array = new int[300];
     
     public ArraysPrint() //Construtor inicializa o array.
     {
