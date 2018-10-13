@@ -40,6 +40,29 @@ public class TestException {
         }
     }
     
-   
+    public void catchExceptions(String name, float number, float gradient){
+       
+        try{
+            setName(name);
+        }catch(InvalidNameException e){
+            
+            System.out.println(e);
+        }
+        
+        try{
+            setNumber(number);
+        }catch(InvalidNumberException e){
+            
+            System.out.println(e);
+        }
+        
+        try{
+            setGradient(gradient);
+        }catch(ExplodinGradientException e)
+        {
+            System.out.println(e);
+        }
+        
+    }
     
 }
