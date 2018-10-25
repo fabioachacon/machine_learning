@@ -2,32 +2,16 @@ import java.util.Random;
 import java.util.Arrays;
 
 
-public class GradientDescent {
+public class Parameters {
     
     
     private double[][] W = null;
     private double[] w = null;
     private double[] b = null;  
-   
-    private Random rand = new Random();
-   
-   public double sigmoid(double z){
-       
-       return 1/(1+Math.exp(-z));
-   }
-   
-   public double[] ReLu(double[] z){
-        
-          double[] h = new double[z.length];
-          
-           for(int i = 0; i < z.length; i++){
-               
-               h[i] = Math.max(0, z[i]);
-           }
-           
-       return h;
-   }
-   
+    private rand = new Random();
+    
+    
+  
    
    public void initParameters(double[][] W, double[] w, double[] bias)
    {
@@ -47,20 +31,6 @@ public class GradientDescent {
        
        for(int i = 0; i < bias.length; i++)
            bias[i] = 0.0;
-   }
-   
-   public double[] computActivations(int dim, double[][] W, double[] input){
-       
-     double[] z = new double[dim];
-     
-
-          for(int k = 0; k < W.length; k++)
-              for(int j = 0; j < input.length; j++)
-                     z[k] += input[j]*W[k][j];
-             
-              
-        return z;  
-           
    }
    
    public double zLinearOutPut(double[] units, double[] w){
