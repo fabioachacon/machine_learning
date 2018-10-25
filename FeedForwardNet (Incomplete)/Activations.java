@@ -6,7 +6,7 @@ import java.util.Random;
 public class Activations {
     
        
-       public double sigmoid(double z){
+   public double sigmoid(double z){
        
        return 1/(1+Math.exp(-z));
    }
@@ -22,6 +22,14 @@ public class Activations {
            
        return h;
    }
+    
+   public double tanh(double z){
+       
+       return 2*sigmoid(2*z) - 1;
+       
+   }
+    
+   
    
    
    
