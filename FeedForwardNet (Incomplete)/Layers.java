@@ -4,20 +4,19 @@ import java.util.Random;
 
 public class Layers {
     
-    private  int units[] = null;
-    private  int Parameters;
+    private  int[] units = null;
+    private Parameters[] = null;
     private Activations[] act = null;
     
     
-    public Layers(int units, Activations act){
+    public Layers(int units, String act){
+        
         
         setUnits(units);
+       
+       
     }
-    
-    public void inputLayer(int input){
-        
-        
-    }
+
     
     public  void setUnits(int units){
         
