@@ -10,7 +10,7 @@ public class SGDoptimizer {
        return act.sigmoid(z)*(1-act.sigmoid(z));
    }
     
-    public void gradienDescent(double[] w, double[] units, int iterations, double learning_rate){
+    public void stepDescent(double[] w, double[] units, int iterations, double learning_rate){
        
             double lr = learning_rate;
             System.out.println(Arrays.toString(w));
