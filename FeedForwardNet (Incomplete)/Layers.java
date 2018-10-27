@@ -5,7 +5,7 @@ import java.util.Random;
 public class Layers {
     
     private  int[] units = null;
-    private Parameters[] = null;
+    private Parameters[] par = null;
     private Activations[] act = null;
     
     
