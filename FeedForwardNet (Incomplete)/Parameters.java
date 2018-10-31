@@ -50,24 +50,6 @@ public class Parameters {
        return sigmoid(z)*(1-sigmoid(z));
    }
      
-   public void gradienDescent(double[] w, double[] units, int iterations, double learning_rate){
-       
-            double lr = learning_rate;
-            System.out.println(Arrays.toString(w));
-     
-        for(int i = 0; i < iterations; i++){
-           
-           for(int j = 0; j < w.length; j++)
-           {
-               w[j] = w[j] - lr*(1-Dsig(zLinearOutPut(units, w)))*units[j];
-               
-           }
-           
-             System.out.println(Arrays.toString(w));
-       }
-       
-   }  
+  
    
- 
-    
 }
