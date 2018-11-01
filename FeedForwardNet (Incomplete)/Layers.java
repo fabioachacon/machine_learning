@@ -45,6 +45,7 @@ public class Layers {
        for(int i = 0; i < bias.length; i++)
            bias[i] = 0.0;
    }
+    
    
    public double[] computActivations(int dim, double[][] W, double[] input){
        
@@ -58,6 +59,18 @@ public class Layers {
               
         return z;  
            
+   }
+    
+     public double zLinearOutPut(double[] units, double[] w){
+       
+       double z = 0;
+       
+       for(int k = 0; k < units.length; k++)
+       {
+           z += units[k]*w[k];
+       }
+       
+       return z;
    }
    
     
