@@ -29,7 +29,24 @@ public class Activations {
        
    }
     
-   
+   public double[] softmax(double[] z){
+       
+       double[] h = new double[z.length];
+       double norm = 0;
+       
+       for(int j = 0; j < z.length; j++)
+       {
+           norm += Math.exp(z[j]);
+       }
+       
+       for(int i = 0; i < z.length; i++)
+       {
+           h[i] = Math.exp(z[i])/norm;
+       }
+       
+       return h;
+       
+   }
    
    
    
