@@ -33,22 +33,22 @@ public class Parameters {
            bias[i] = 0.0;
    }
    
-   public double zLinearOutPut(double[] units, double[] w){
+    public double[] vectorizeParameter(double[][] W){
        
-       double z = 0;
+       double[] w = new double[getMatrixDim(W)];
        
-       for(int k = 0; k < units.length; k++)
-       {
-           z += units[k]*w[k];
-       }
+       System.arraycopy(W[0], 0, w, 0, w.length);
        
-       return z;
+       return w;
+       
    }
+   
+   public int getMatrixDim(double[][] W){
       
-   public double Dsig(double z){
+       return W[0].length*W.length;
        
-       return sigmoid(z)*(1-sigmoid(z));
    }
+
      
   
    
