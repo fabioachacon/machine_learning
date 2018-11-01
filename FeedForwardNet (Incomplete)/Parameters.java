@@ -8,7 +8,7 @@ public class Parameters {
     private double[][] W = null;
     private double[] w = null;
     private double[] b = null;  
-    private rand = new Random();
+    private Random rand = new Random();
     
     
   
