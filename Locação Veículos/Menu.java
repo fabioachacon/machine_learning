@@ -34,7 +34,7 @@ public void displayMenu()  {
 			exibirListaClientes();
 			break;
 		case 3:
-			 showCheckBox();
+			showCheckBox();
 			break;
 		case 4:
 			System.exit(0);
@@ -83,7 +83,7 @@ public void displayMenu()  {
 	
 	public void showCheckBox() {
 		 
-		 JCheckBox carroCheckBox = new JCheckBox("Carro");
+		 carroCheckBox = new JCheckBox("Carro");
 		 JCheckBox motoCheckBox  = new JCheckBox("Moto");
 		 frame.add(carroCheckBox);
 		 frame.add(motoCheckBox);
@@ -93,7 +93,7 @@ public void displayMenu()  {
 	
 	public void exibirCarros() {
 		
-		JList carroLista = new JList(lista.getCarros());
+	    JList carroLista = new JList(lista.getCarros());
 	    carroLista.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		
 	}
@@ -101,7 +101,7 @@ public void displayMenu()  {
    public void exibirMotos() {
 	   
 	     JList motoLista  = new JList(lista.getMotos());
-		 motoLista.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+             motoLista.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
    }
 	
 	
