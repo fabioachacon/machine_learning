@@ -19,9 +19,9 @@ public class Menu {
 public void displayMenu()  {
 		
 		String message = "1-Cadastrar Cliente\n"
-			         	+"2-Exibir Lista de Clientes\n"
-			         	+"3-Selecionar Veículo\n"
-			         	+"4-Sair";
+			         +"2-Exibir Lista de Clientes\n"
+			         +"3-Selecionar Veículo\n"
+			         +"4-Sair";
 		
 		int op = Integer.parseInt(JOptionPane.showInputDialog(null, message, "Selecione uma Opção", JOptionPane.PLAIN_MESSAGE));
 		
