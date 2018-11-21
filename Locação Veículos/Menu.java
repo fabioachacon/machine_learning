@@ -35,6 +35,7 @@ public void displayMenu()  {
 			break;
 		case 3:
 			 showCheckBox();
+			break;
 		case 4:
 			System.exit(0);
 		default:
