@@ -9,9 +9,9 @@ import java.awt.event.ItemEvent;
 
 public class Menu {
 	
-	private List<Cliente> cliente = new ArrayList<Cliente>();
-	private ListaVeiculos lista = new ListaVeiculos();
-	private LocacaoVeiculo locacao;
+    private List<Cliente> cliente = new ArrayList<Cliente>();
+    private ListaVeiculos lista = new ListaVeiculos();
+    private LocacaoVeiculo locacao;
     private CadastroVeiculo cadastro;
     private JFrame frame = new JFrame();
     private JCheckBox carroCheckBox, motoCheckBox;
