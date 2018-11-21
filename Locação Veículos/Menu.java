@@ -3,7 +3,6 @@ package locadoraveiculos;
 import javax.swing.*;
 import java.util.*;
 import java.awt.event.ItemListener;
-import java.awt.Container;
 import java.awt.event.ItemEvent;
 
 
@@ -21,10 +20,10 @@ public void displayMenu()  {
 		
 		String message = "1-Cadastrar Cliente\n"
 			         	+"2-Exibir Lista de Clientes\n"
-			         	+"3-Selecionar VeÌculo\n"
+			         	+"3-Selecionar Ve√≠culo\n"
 			         	+"4-Sair";
 		
-		int op = Integer.parseInt(JOptionPane.showInputDialog(null, message, "Selecione uma OpÁ„o", JOptionPane.PLAIN_MESSAGE));
+		int op = Integer.parseInt(JOptionPane.showInputDialog(null, message, "Selecione uma Op√ß√£o", JOptionPane.PLAIN_MESSAGE));
 		
 		switch(op){
 			
@@ -39,7 +38,7 @@ public void displayMenu()  {
 		case 4:
 			System.exit(0);
 		default:
-			JOptionPane.showMessageDialog(null, "OP«√O INV¡LIDA", "ERRO", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null, "OP√á√ÉO INV√ÅLIDA", "ERRO", JOptionPane.ERROR_MESSAGE);
 			
 		}
 	 
@@ -59,7 +58,7 @@ public void displayMenu()  {
 			
 			name = JOptionPane.showInputDialog("Insira o seu nome");
 			id =  Integer.parseInt(JOptionPane.showInputDialog("Insira sua Identidade"));
-			end = JOptionPane.showInputDialog("Insira seu endereÁo");
+			end = JOptionPane.showInputDialog("Insira seu endere√ßo");
 			tel = Integer.parseInt(JOptionPane.showInputDialog("Insira seu telefone"));
 			
 			cliente.add(new Cliente(name, id, end, tel));
