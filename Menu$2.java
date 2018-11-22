@@ -15,9 +15,9 @@ import java.awt.event.ItemEvent;
 
 public class Menu {
 	
-	private List<Cliente> cliente = new ArrayList<Cliente>();
-	private ListaVeiculos listaVeiculos = new ListaVeiculos();
-	private LocacaoVeiculo locacao;
+    private List<Cliente> cliente = new ArrayList<Cliente>();
+    private ListaVeiculos listaVeiculos = new ListaVeiculos();
+    private LocacaoVeiculo locacao;
     private CadastroVeiculo cadastro;
     private JFrame frame = new JFrame();
     private JRadioButton carroRadioButton, motoRadioButton;
@@ -37,10 +37,10 @@ public void displayMenu()  {
 		
 		String message = "1-Cadastrar Cliente\n"
 			         	+"2-Exibir Lista de Clientes\n"
-			         	+"3-Selecionar VeÌculo\n"
+			         	+"3-Selecionar Ve√≠culo\n"
 			         	+"4-Sair";
 		
-		int op = Integer.parseInt(JOptionPane.showInputDialog(null, message, "Selecione uma OpÁ„o", JOptionPane.PLAIN_MESSAGE));
+		int op = Integer.parseInt(JOptionPane.showInputDialog(null, message, "Selecione uma Op√ß√£o", JOptionPane.PLAIN_MESSAGE));
 		
 		switch(op){
 			
@@ -55,7 +55,7 @@ public void displayMenu()  {
 		case 4:
 			System.exit(0);
 		default:
-			JOptionPane.showMessageDialog(null, "OP«√O INV¡LIDA", "ERRO", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(null, "OP√á√ÉO INV√ÅLIDA", "ERRO", JOptionPane.ERROR_MESSAGE);
 			
 		}
 	 
@@ -75,7 +75,7 @@ public void displayMenu()  {
 			
 			name = JOptionPane.showInputDialog("Insira o seu nome");
 			id =  Integer.parseInt(JOptionPane.showInputDialog("Insira sua Identidade"));
-			end = JOptionPane.showInputDialog("Insira seu endereÁo");
+			end = JOptionPane.showInputDialog("Insira seu endere√ßo");
 			tel = Integer.parseInt(JOptionPane.showInputDialog("Insira seu telefone"));
 			
 			cliente.add(new Cliente(name, id, end, tel));
@@ -113,7 +113,7 @@ public void displayMenu()  {
 		 carroRadioButton.addItemListener(new RadioButtonHandler());
 		 motoRadioButton.addItemListener(new RadioButtonHandler());
 		 
-		 label = new JLabel("Selecione o tipo de VeÌculo");
+		 label = new JLabel("Selecione o tipo de Ve√≠culo");
 		 
 		 frame.setLayout(layout);
 		 frame.add(label);
@@ -137,7 +137,7 @@ public void displayMenu()  {
 		
 		JFrame frame = new JFrame();
 		
-		JList carroLista = new JList(listaVeiculos.getCarros());
+	    JList carroLista = new JList(listaVeiculos.getCarros());
 	    carroLista.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 	    carroLista.setVisibleRowCount(6);
 	    
@@ -164,8 +164,8 @@ public void displayMenu()  {
 	
    public void exibirMotos() {
 	   
-	     JList motoLista  = new JList(listaVeiculos.getMotos());
-		 motoLista.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+	       JList motoLista  = new JList(listaVeiculos.getMotos());
+	       motoLista.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
    }
    
    private class ButtonHandler implements ActionListener{
