@@ -7,8 +7,9 @@ public class Veiculo {
 	private String placa;
 	
 	
-	public Veiculo(String descricao, String placa) {
+	public Veiculo(String marca, String descricao, String placa) {
 		
+		setMarca(marca);
 		setPlaca(placa);
 		setDescricao(descricao);
 		
@@ -27,6 +28,16 @@ public class Veiculo {
 		return descricao;
 	}
 	
+	public void setMarca(String marca) {
+		
+		this.marca = marca;
+	}
+	
+	public String getMarca() {
+		
+		return marca;
+	}
+	
 	public void setPlaca(String placa) {
 		
 		this.placa = placa;
@@ -39,10 +50,13 @@ public class Veiculo {
 	
 	public String toString() {
 		
-		return String.format("Descrição: %s\n"
-				           + "Placa: %s",
+		return String.format("Marca: %s\n"
+			               + "Descrição: %s\n"
+				           + "Placa: %s", getMarca(),
 				           getDescricao(), getPlaca());
 	}
+	
+	
 	
 	
 
