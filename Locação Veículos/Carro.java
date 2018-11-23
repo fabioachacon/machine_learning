@@ -2,12 +2,12 @@ package locadoraveiculos;
 
 public class Carro extends Veiculo {
 
-	private int n_passageiros;
+	private int numPassageiros;
 	
 	
- public Carro(String placa, String descricao, int num) {
+ public Carro(String marca, String placa, String descricao, int num) {
 	 
-	 super(descricao, placa);
+	 super(marca, descricao, placa);
 	 
 	 setPassageiros(num);
 	 
@@ -15,12 +15,12 @@ public class Carro extends Veiculo {
 	
 public void setPassageiros(int num) {
 		
-		n_passageiros = num;
+		numPassageiros = num;
 	}
 	
 public int getPassageiros() {
 	
-	return n_passageiros;
+	return numPassageiros;
 }
 	
 	public String toString() {

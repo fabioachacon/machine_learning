@@ -19,8 +19,8 @@ public class ListaVeiculos {
 	
 	
 	  /**
-	   * Esse m√©todo gera aleatoriamente uma placa de ve√≠culo.
-	   * @return Retorna uma String contendo a placa do ve√≠culo.
+	   * Esse mÈtodo gera aleatoriamente uma placa de veÌculo.
+	   * @return Retorna uma String contendo a placa do veÌculo.
 	   */
 	  public String gerarPlaca() {
 		  
@@ -64,33 +64,46 @@ public class ListaVeiculos {
 	  }
 	  
   public String descricaoCarro() {
-		  
-		  final String[] marcaCarro = {"BMW", "Volvo", "Volkswagen", "Tesla", "Ford", "Honda","Hyundai"};
+		 
 		  String descricao = "";
-		  String marca = marcaCarro[rand.nextInt(marcaCarro.length)]
 		  
 		  switch(1 + rand.nextInt(3)) {
 		      
 		  case 1:
-			  descricao = marca + "QUATRO PORTAS/AR-CONDICIONADO/DIRE√á√ÉO HIDR√ÅULICA";
+			  descricao = "QUATRO PORTAS/AR-CONDICIONADO/DIRE«√O HIDR¡ULICA";
 			  break;
 		  case 2:
-			  descricao = marca + "DUAS PORTAS/AR-CONDICIONADO/DIRE√á√ÉO HIDR√ÅULICA";
+			  descricao = "DUAS PORTAS/AR-CONDICIONADO/DIRE«√O HIDR¡ULICA";
 			  break;
 		  case 3:
-			  descricao = marca + "CABINE DUPLA/AR-CONDICIONADO";
+			  descricao = "CABINE DUPLA/AR-CONDICIONADO";
 			  break;
 	}
 		  
 		  return descricao;
   }
+  
+     public String gerarMarcaCarro() {
+    	 
+    	 final String[] marcaCarro = {"bmw", "Volvo", "Volkswagen", "Tesla", "Ford", "Honda","Hyundai"};
+    	 
+    	 return marcaCarro[rand.nextInt(marcaCarro.length)].toUpperCase();
+    	 
+     }
+     
+     public String gerarMarcaMoto() {
+    	 
+    	 final String[] marcaMoto = {"Honda", "yamaha", "bmw", "kawasaki", "harley-davidson", "ducati"};
+    	 return marcaMoto[rand.nextInt(marcaMoto.length)].toUpperCase();     
+    	 
+     }
 	
 	  public void setCarros() {
 		  
 	    
 	    	for(int i = 0; i < carros.length; i++) {
 	    		
-	    		carros[i] = new Carro(gerarPlaca(), descricaoCarro(), rand.nextBoolean() ? 4 : 5);
+	    		carros[i] = new Carro(gerarMarcaCarro(), gerarPlaca(), descricaoCarro(), rand.nextBoolean() ? 4 : 5);
 	    	}
 	    	
 	    	
@@ -100,12 +113,10 @@ public class ListaVeiculos {
 		  
 		  for(int i = 0; i < motos.length; i++) {
 	    		
-	    		motos[i] = new Moto(gerarPlaca(), descricaoMoto(), rand.nextBoolean() ? "sim" : "n√£o");
+	    		motos[i] = new Moto(gerarMarcaMoto(), gerarPlaca(), descricaoMoto(), rand.nextBoolean() ? "sim" : "n„o");
 	    	}
 		  
-		 
-		  
-	  }
+	}
 	  
 	  public Veiculo[] getCarros() {
 		  

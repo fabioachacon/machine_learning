@@ -6,7 +6,8 @@ public class CadastroVeiculo {
 	
 	private ListaVeiculos lista = new ListaVeiculos();
 	private Veiculo tipoVeiculo;
-	private double valor;
+	private final double PRECOCARRO = 150.00;
+	private final double PRECOMOTO = 80.00;
 	
 
 	
@@ -21,27 +22,46 @@ public class CadastroVeiculo {
 		return tipoVeiculo;
 	}
 	
-	public double getValor() {
-		
-		return valor;
-	}
 	
-	public void carrosCadastrados(){
+	public void exibirCarrosCadastrados(){
 		
 		for(int i = 0; i < lista.getCarros().length; i++) {
 			
-			System.out.println(lista.getCarros()[i]);
+			System.out.printf("(%s)\n%s\n", i+1, lista.getCarros()[i]);
 		}
    
- }
-
-	public void motosCadastradas(){
+  }
+	
+    public void exibirMotosCadastradas(){
 		
 		for(int i = 0; i < lista.getMotos().length; i++) {
 			
-			System.out.println(lista.getMotos()[i]);
+			System.out.printf("(%s)\n%s\n", i+1, lista.getMotos()[i]);
 		}
-	
-}
+     }   
 
+	
+	
+	public double valorLocacao(Veiculo veiculo) {
+		
+		if(veiculo instanceof Carro) {
+			
+			return PRECOCARRO;
+		}
+		else
+			return PRECOMOTO;
+		
+	}
+	
+	public Veiculo[] getCarrosCadastrados() {
+		
+		return lista.getCarros();
+	}
+	
+	public Veiculo[] getMotosCadastradas() {
+		
+		return lista.getMotos();
+	}
+
+	
   }

@@ -4,9 +4,9 @@ public class Moto extends Veiculo {
 	
 	private String partidaEletrica;
 
-public Moto (String placa, String descricao, String partida) {
+public Moto (String marca, String placa, String descricao, String partida) {
 	
-	super(descricao, placa);
+	super(marca, descricao, placa);
 	
 	setPartida(partida);
 	
