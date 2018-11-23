@@ -19,8 +19,8 @@ public class ListaVeiculos {
 	
 	
 	  /**
-	   * Esse mÈtodo gera aleatoriamente uma placa de veÌculo.
-	   * @return Retorna uma String contendo a placa do veÌculo.
+	   * Esse m√©todo gera aleatoriamente uma placa de ve√≠culo.
+	   * @return Retorna uma String contendo a placa do ve√≠culo.
 	   */
 	  public String gerarPlaca() {
 		  
@@ -70,10 +70,10 @@ public class ListaVeiculos {
 		  switch(1 + rand.nextInt(3)) {
 		      
 		  case 1:
-			  descricao = "QUATRO PORTAS/AR-CONDICIONADO/DIRE«√O HIDR¡ULICA";
+			  descricao = "QUATRO PORTAS/AR-CONDICIONADO/DIRE√á√ÉO HIDR√ÅULICA";
 			  break;
 		  case 2:
-			  descricao = "DUAS PORTAS/AR-CONDICIONADO/DIRE«√O HIDR¡ULICA";
+			  descricao = "DUAS PORTAS/AR-CONDICIONADO/DIRE√á√ÉO HIDR√ÅULICA";
 			  break;
 		  case 3:
 			  descricao = "CABINE DUPLA/AR-CONDICIONADO";
@@ -86,7 +86,6 @@ public class ListaVeiculos {
      public String gerarMarcaCarro() {
     	 
     	 final String[] marcaCarro = {"bmw", "Volvo", "Volkswagen", "Tesla", "Ford", "Honda","Hyundai"};
-    	 
     	 return marcaCarro[rand.nextInt(marcaCarro.length)].toUpperCase();
     	 
      }
@@ -113,7 +112,7 @@ public class ListaVeiculos {
 		  
 		  for(int i = 0; i < motos.length; i++) {
 	    		
-	    		motos[i] = new Moto(gerarMarcaMoto(), gerarPlaca(), descricaoMoto(), rand.nextBoolean() ? "sim" : "n„o");
+	    		motos[i] = new Moto(gerarMarcaMoto(), gerarPlaca(), descricaoMoto(), rand.nextBoolean() ? "sim" : "n√£o");
 	    	}
 		  
 	}
