@@ -1,6 +1,6 @@
 package locadoraveiculos;
 
-public class Veiculo {
+public abstract class Veiculo {
 	
 	private String marca;
 	private String descricao;
@@ -47,6 +47,8 @@ public class Veiculo {
 		
 		return placa;
 	}
+	
+
 	
 	public String toString() {
 		
