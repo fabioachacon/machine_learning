@@ -2,10 +2,9 @@ package locadoraveiculos;
 
 public class Cliente {
 	
-	private String nome;
-	private int ID;
-	private String endereco;
-	private int tel;
+	private String nome, endereco;
+	private int ID, tel;
+
 	
 	public Cliente(String name, int id, String end, int tel) {
 		
@@ -61,7 +60,7 @@ public class Cliente {
 	{
 		return String.format("Nome: %s\n"
 				          + "Identidade: %s\n"
-				          + "Endereço: %s\n"
+				          + "EndereÃ§o: %s\n"
 				          + "Telefone: %s\n", getNome(), getID(), getEndereco(), getTel());
 	}
 
