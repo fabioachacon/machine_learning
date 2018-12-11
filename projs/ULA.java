@@ -1,9 +1,8 @@
-package simulador;
-
+package com.simulador;
 
 public class ULA {
     
-	enum OP{ADD, SUB, MULT, DIV, OR, AND, NOT, LOAD};
+	enum OP{ADD, SUB, OR, AND};
 	
 	private final int BITS = 8;
     private Integer[] BX = new Integer[BITS]; //registrador B.
@@ -19,12 +18,10 @@ public class ULA {
     	case SUB:
     	    return binToInt(SUB(toBinary(data1), toBinary(data2)));
     	case OR:
-    	   return OR(data1, data2);
-    	case NOT:
-    	    break;
-    	case AND:
-    		AND(data1, data2);
-    		break;
+    	  return OR(data1, data2);
+        case AND:
+    	return AND(data1, data2);
+    		
     }
     	
       return NOP();
@@ -142,8 +139,5 @@ public class ULA {
 	   
 	   return Integer.parseInt(conv, 2);
 	}
-   
-
-   
-
+  
 }
