@@ -34,7 +34,7 @@ public class Activations {
     }
 
     public double[] absoluteValueRectification(double[] z){
-        return generalizedRelu(z,-1.0);
+        return generalizedRelu(z, -1.0);
     }
 
     public double[] tanh(double[] z) {
