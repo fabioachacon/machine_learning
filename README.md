@@ -1,1 +1,1 @@
-This repository contains some of my Deep Learning, Machine Learning and data analysis projects.
+This repository contains some of my Machine Learning and data analysis projects.
